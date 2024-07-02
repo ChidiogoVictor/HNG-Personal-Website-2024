@@ -6,8 +6,8 @@ setInterval(() =>{
     hours= date.getUTCHours();
     minutes = date.getUTCMinutes();
     seconds = date.getUTCSeconds();
-    expected = hours + " : " + minutes + " : " + seconds
-    time.innerHTML = expected
+    expectedTimeUTC = hours + " : " + minutes + " : " + seconds
+    time.innerHTML = expectedTimeUTC
 }, 1000);
 
 
