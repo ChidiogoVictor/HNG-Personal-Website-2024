@@ -3,7 +3,11 @@ let time = document.getElementById("currentTimeUTC");
 
 setInterval(() =>{
     let date = new Date();
-    time.innerHTML = date.toUTCString();
+    hours= date.getUTCHours();
+    minutes = date.getUTCMinutes();
+    seconds = date.getUTCSeconds();
+    expected = hours + ":" + minutes + ":" + seconds
+    time.innerHTML = expected
 }, 1000);
 
 
